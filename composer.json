@@ -1,0 +1,24 @@
+{
+    "name": "nullref/yii2-sb-admin-2",
+    "description": "Collection of asset bundles and other stuff for SB Admin theme",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmytro Karpovych",
+            "email": "zayec77@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.4",
+        "yiisoft/yii2-bootstrap": "*",
+        "rmrevin/yii2-fontawesome": ">=2.10.0",
+        "bower-asset/startbootstrap-sb-admin-2": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "nullref\\sbadmin\\": "src/"
+        }
+    }
+}
