@@ -15,18 +15,15 @@ class SBAdminAsset extends AssetBundle
     public $baseUrl = '@web';
 
     public $css = [
-        'metisMenu/dist/metisMenu.css',
         'startbootstrap-sb-admin-2/dist/css/sb-admin-2.css',
         'startbootstrap-sb-admin-2/dist/css/timeline.css',
     ];
 
     public $js = [
-        'metisMenu/dist/metisMenu.js',
         'startbootstrap-sb-admin-2/dist/js/sb-admin-2.js',
     ];
 
     public $depends = [
-        'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
         'yii\bootstrap\BootstrapPluginAsset',
         'rmrevin\yii\fontawesome\AssetBundle',

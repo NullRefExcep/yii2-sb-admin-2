@@ -1,6 +1,6 @@
 <?php
 
-namespace nullref\widgets;
+namespace nullref\sbadmin\widgets;
 
 use yii\bootstrap\Alert;
 use yii\bootstrap\Widget;
