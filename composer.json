@@ -6,7 +6,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Dmytro Karpovych",
+            "name": "Dmytro Karpovy ch",
             "email": "zayec77@gmail.com"
         }
     ],
@@ -15,6 +15,15 @@
         "yiisoft/yii2-bootstrap": "*",
         "rmrevin/yii2-fontawesome": ">=2.10.0",
         "bower-asset/startbootstrap-sb-admin-2": "dev-master"
+    },
+    "extra": {
+        "asset-repositories": [
+            {
+                "type": "bower-vcs",
+                "url": "https://github.com/adobe-webplatform/eve.git#eef80ed",
+                "name": "bower-asset/eve"
+            }
+        ]
     },
     "autoload": {
         "psr-4": {
