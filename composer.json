@@ -6,10 +6,11 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Dmytro Karpovy ch",
+            "name": "Dmytro Karpovych",
             "email": "zayec77@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": ">=2.0.4",
         "yiisoft/yii2-bootstrap": "*",
@@ -17,13 +18,13 @@
         "bower-asset/startbootstrap-sb-admin-2": "dev-master"
     },
     "extra": {
-        "asset-repositories": [
-            {
-                "type": "bower-vcs",
-                "url": "https://github.com/adobe-webplatform/eve.git#eef80ed",
-                "name": "bower-asset/eve"
-            }
-        ]
+        "bower-asset-ignore": [
+            "raphael"
+        ],
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
     },
     "autoload": {
         "psr-4": {
