@@ -10,21 +10,17 @@
             "email": "zayec77@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "yiisoft/yii2": ">=2.0.4",
-        "yiisoft/yii2-bootstrap": "*",
-        "rmrevin/yii2-fontawesome": ">=2.10.0",
         "bower-asset/startbootstrap-sb-admin-2": "dev-master"
     },
     "extra": {
-        "bower-asset-ignore": [
-            "raphael"
-        ],
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
-        }
+        "asset-repositories": [
+            {
+                "type": "bower-vcs",
+                "url": "https://github.com/ZAYEC77/startbootstrap-sb-admin-2.git",
+                "name": "bower-asset/startbootstrap-sb-admin-2"
+            }
+        ]
     },
     "autoload": {
         "psr-4": {
