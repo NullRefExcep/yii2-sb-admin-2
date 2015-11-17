@@ -12,6 +12,8 @@
         }
     ],
     "require": {
+        "yiisoft/yii2-bootstrap": "*",
+        "rmrevin/yii2-fontawesome": ">=2.10.0",
         "bower-asset/startbootstrap-sb-admin-2": ">=1.0.4"
     },
     "autoload": {
