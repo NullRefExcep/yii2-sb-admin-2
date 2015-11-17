@@ -4,6 +4,7 @@
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Dmytro Karpovych",
@@ -11,16 +12,7 @@
         }
     ],
     "require": {
-        "bower-asset/startbootstrap-sb-admin-2": "dev-master"
-    },
-    "extra": {
-        "asset-repositories": [
-            {
-                "type": "bower-vcs",
-                "url": "https://github.com/ZAYEC77/startbootstrap-sb-admin-2.git",
-                "name": "bower-asset/startbootstrap-sb-admin-2"
-            }
-        ]
+        "bower-asset/startbootstrap-sb-admin-2": ">=1.0.4"
     },
     "autoload": {
         "psr-4": {
