@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
  */
 class SBAdminAsset extends AssetBundle
 {
-    public $sourcePath = '@bower';
+    public $sourcePath = '@nullref/sbadmin/assets/';
     public $baseUrl = '@web';
 
     public $css = [
