@@ -15,12 +15,11 @@ class SBAdminAsset extends AssetBundle
     public $baseUrl = '@web';
 
     public $css = [
-        'startbootstrap-sb-admin-2/dist/css/sb-admin-2.css',
-        'startbootstrap-sb-admin-2/dist/css/timeline.css',
+        'css/sb-admin-2.css',
     ];
 
     public $js = [
-        'startbootstrap-sb-admin-2/dist/js/sb-admin-2.js',
+        'js/sb-admin-2.js',
     ];
 
     public $depends = [
