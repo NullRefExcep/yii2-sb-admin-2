@@ -13,13 +13,14 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\helpers\Url;
-use yii\widgets\Menu;
 
 /**
  *
  */
 class MetisMenu extends Menu
 {
+    public $isCollapsed = false;
+
     /**
      * @var bool $toogle - if true, when expand one submenu, other will be collapsed as accordeon
      * @see https://github.com/onokumus/metisMenu
@@ -72,11 +73,11 @@ class MetisMenu extends Menu
     /**
      * @inheritdoc
      */
-    public $linkTemplate = '<a href="{url}">{icon}&nbsp;{label}{badge}</a>';
+    public $linkTemplate = '<a href="{url}" title="{title}">{icon}&nbsp;{label}{badge}</a>';
     /**
      * @inheritdoc
      **/
-    public $labelTemplate = '<a href="#">{icon}&nbsp;{label}<span class="fa arrow"></span></a>';
+    public $labelTemplate = '<a href="#" title="{title}">{icon}&nbsp;{label}<span class="fa arrow"></span></a>';  /**
     /**
      * @inheritdoc
      **/
@@ -116,14 +117,20 @@ class MetisMenu extends Menu
             return strtr($template, [
                 '{icon}' => ArrayHelper::getValue($item, 'icon', ''),
                 '{url}' => Html::encode(Url::to($item['url'])),
-                '{label}' => $item['label'],
+                '{title}' => $item['label'],
+                '{label}' => Html::tag('span', $item['label'], [
+                    'class' => 'menu-label'
+                ]),
                 '{badge}' => ArrayHelper::getValue($item, 'badge', ''),
             ]);
         } else {
             $template = ArrayHelper::getValue($item, 'template', $this->labelTemplate);
             return strtr($template, [
                 '{icon}' => ArrayHelper::getValue($item, 'icon', ''),
-                '{label}' => $item['label'],
+                '{title}' => $item['label'],
+                '{label}' => Html::tag('span', $item['label'], [
+                    'class' => 'menu-label'
+                ]),
             ]);
         }
     }
