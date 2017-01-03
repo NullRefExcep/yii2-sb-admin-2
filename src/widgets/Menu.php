@@ -33,12 +33,6 @@ class Menu extends BaseMenu
         if (!empty($items)) {
             $view = $this->getView();
             $view->registerJs(<<<JS
-            var isCollapse = function() {
-                if (jQuery('.sidebar').hasClass('closed')) {
-                    jQuery('#page-wrapper').toggleClass('maximized');
-                }
-            };
-            isCollapse();
             jQuery('.menu-button').click(function(){
                 var sidebar = jQuery('.sidebar');
                 var page = jQuery('#page-wrapper');
