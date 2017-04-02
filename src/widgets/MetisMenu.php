@@ -77,7 +77,7 @@ class MetisMenu extends Menu
     /**
      * @inheritdoc
      **/
-    public $labelTemplate = '<a href="#" title="{title}">{icon}&nbsp;{label}<span class="fa arrow"></span></a>';  /**
+    public $labelTemplate = '<a href="#" title="{title}">{icon}&nbsp;{label}<span class="fa arrow"></span></a>';
     /**
      * @inheritdoc
      **/
