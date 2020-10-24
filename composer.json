@@ -14,7 +14,7 @@
     "require": {
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "rmrevin/yii2-fontawesome": "^2.16",
-        "bower-asset/metisMenu": "1.1.3"
+        "bower-asset/metismenu": "1.1.3"
     },
     "autoload": {
         "psr-4": {
